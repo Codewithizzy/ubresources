@@ -1,0 +1,53 @@
+.ub-products {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .ub-products .products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .ub-products h1 {
+    color: #333;
+  }
+  
+  .ub-products .filter-options select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .ub-products .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .ub-products .loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .ub-products .error {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2rem;
+    color: #e74c3c;
+  }
+  
+  @media (max-width: 600px) {
+    .ub-products .products-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  }

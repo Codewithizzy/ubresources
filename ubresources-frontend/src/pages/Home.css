@@ -1,0 +1,102 @@
+.ub-home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Hero Section */
+  .ub-home .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+  
+  .ub-home .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .ub-home .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .ub-home .shop-now-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ub-home .shop-now-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Featured Products Section */
+  .ub-home .featured-products {
+    margin: 40px 0;
+  }
+  
+  .ub-home .featured-products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .ub-home .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  /* About Preview Section */
+  .ub-home .about-preview {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .ub-home .about-preview h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .ub-home .about-preview p {
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 600px) {
+    .ub-home .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .ub-home .hero p {
+      font-size: 1rem;
+    }
+  
+    .ub-home .shop-now-btn {
+      width: 100%;
+      padding: 12px;
+    }
+  
+    .ub-home .products-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
